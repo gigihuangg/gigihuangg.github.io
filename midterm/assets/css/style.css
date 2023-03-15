@@ -1,0 +1,264 @@
+body {
+    background-color: #FFFDE0;
+}
+
+header {
+    font-family: Lemon Milk;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+nav ul {
+    list-style-type: none;
+    padding-inline-start: 0;
+    margin-block-start: 0;
+}
+
+.navigation {
+    background-color: #FFFDE0;
+    margin-left: -10px;
+    margin-right: 1000px;
+    padding-bottom: 500px;
+    position: fixed;
+    padding-top: 50px;
+    top: 0;
+}
+
+.navigation-menu {
+    padding-top: 50px;
+    padding-bottom: 500px;
+    margin-right: 1000px;
+    margin-left: -10;
+    position: fixed;
+    top: 0;
+}
+
+a:link {
+    text-decoration: none;
+    color: #333333;
+}
+
+a:active {
+    color:#9C2024;
+}
+
+a:visited {
+    color:#333333;
+}
+
+a:hover {
+    color:#9C2024;
+}
+
+nav {
+    margin-right: 75px;
+}
+
+nav li {
+    display: block;
+    margin-left: 50px;
+    line-height: 80px;
+    text-align: center;
+}
+
+
+#logo {
+    margin-left: 75px;
+    height: 100px;
+    margin-bottom: 50px;
+}
+
+#ordernow {
+    background-color: #9C2024;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    padding: 10px;
+    padding-right: 20px;
+    padding-left: 20px;
+    border: none;
+    border-radius: 30px;
+}
+
+#ordernow:hover {
+    transform: scale(1.1);
+    transition: .2 ease-out;
+}
+
+#left {
+    margin-top: 250px;
+    margin-right: 500px;
+}
+
+#right {
+    margin-top: -400px;
+    /*margin-left: 950px;
+    margin-right: 100px;*/
+}
+
+.main {
+    margin-left: 400px;
+    margin-right: 100px;
+}
+#graphic {
+    float: right;
+    height: 400px;
+}
+
+.title {
+    font-family: Lemon Milk;
+    font-size: 50px;
+    color: #9C2024;
+}
+
+.bodytext {
+    font-family: Gill Sans;
+    font-size: 25px;
+    color: #333333;
+}
+
+.seeourmenu {
+    font-family: Lemon Milk;
+    font-size: 20px;
+    font-weight: 500;
+    color: #9C2024;
+    background-color: #FAF6BD;
+    border-color: #9C2024;
+    border-radius: 30px;
+    border-width: medium;
+    padding: 10px;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.seeourmenu:hover {
+    color: white;
+    background-color: #9C2024;
+}
+
+#seeourmenu {
+    background-color:#FFFDE0;
+    font-family: Lemon Milk;
+    font-size: 20px;
+    font-weight: 500;
+    color: #9C2024;
+    border-color: #9C2024;
+    border-radius: 30px;
+    border-width: medium;
+    padding: 10px;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+#seeourmenu:hover {
+    color: white;
+    background-color: #9C2024;
+}
+
+
+/* MENU PAGE */
+
+#menutitle {
+    font-family: Lemon Milk;
+    font-size: 30px;
+    margin-top: 50px;
+    color: #9C2024;
+}
+
+#menubodytext {
+    font-family: Arial;
+    font-size: 20px;
+    color: #333333;
+
+}
+
+ul {
+    list-style-type: none;
+    
+}
+
+ul#row1 li {
+    display: inline;
+}
+
+.menupic {
+    height: 200px;
+    margin: 10px;
+}
+
+.menupic:hover {
+    transform: scale(1.1);
+}
+
+.menu {
+    margin-left: 400px;
+}
+
+ul#row2 li {
+    display: inline;
+}
+
+ul#row3 li {
+    display: inline;
+}
+
+#feature {
+    margin-top: 700px;
+    margin-left: 400px;
+
+}
+
+.subtitle {
+    font-family: Lemon Milk;
+    font-size: 35px;
+    color: #9C2024;
+}
+
+ul#featurerow {
+    margin-top: 70px;
+    margin-left: -40px;
+}
+
+ul#featurerow li {
+    display: inline;
+}
+
+.featurepic {
+    height: 200px;
+    margin: 10px;
+}
+
+.featurepic:hover {
+    transform: scale(1.1);
+    transition: ease-in-out;
+
+}
+
+.aboutus {
+    margin-left: 200px;
+    margin-top: 100px;
+}
+
+#storegraphic {
+    height: 900px;
+}
+
+#aboutustitle {
+    font-family: Lemon Milk;
+    font-size: 40px;
+    color:#9C2024;
+    margin-left: 900px;
+    margin-right: 100px;
+    margin-top: -700px;
+    font-weight: bold;
+}
+
+#aboutustext {
+    margin-right: 100px;
+    margin-left: 800px;
+    margin-top: 50px;
+    font-family: Gill Sans;
+    font-size: 25px;
+    color:#333333;
+    text-align: right;
+}
