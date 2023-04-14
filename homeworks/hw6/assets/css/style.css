@@ -1,0 +1,203 @@
+/* -- LOADING ANIMATIONS -- */
+/* Loader one: Pulse */
+.loader.one {
+	width: 100px;
+	height: 100px;
+}
+
+.loader.one .circle {
+	height: 100px;
+	width: 100px;
+	background: #E427F9;
+	position: absolute;
+	top: 0;
+	left: 0;
+	border-radius: 50px;
+	
+	animation-name: pulse;
+	animation-duration: 1s;
+	animation-iteration-count: infinite;
+}
+
+.circle.second { 
+	animation-delay: 0.4s;
+}
+
+@keyframes pulse {
+	0% {opacity: 1;}
+	100% {opacity: 0;}
+	from {transform: scale(0.25);}
+	to {transform: scale(1);}
+}
+
+/* Loader two: Wave */
+.loader.two {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	width: 110px;
+}
+
+.dot.first {
+	animation-delay: 0s initial;
+}
+
+.loader.two .dot.second {
+	animation-delay: 0.25s;
+	background: #4DB1F7;
+}
+
+.loader.two .dot.third {
+	animation-delay: 0.5s;
+	background: #7DE76A;
+}
+
+.loader.two .dot {
+	height: 30px;
+	width: 30px;
+	background: #000;
+	border-radius: 15px;
+	background: #F76A4D;
+	
+	animation-name: wave;
+	animation-duration: 1s;
+	animation-iteration-count: infinite;
+}
+
+
+@keyframes wave {
+	0% {transform: translateY(50%);}
+	25% {transform: translateY(0%);}
+	50% {transform: translateY(50%);}
+	100% {transform: translateY(50%);}
+}
+
+/* Loader three: Flip */
+.loader.three .flip-tile {
+	height: 100px;
+	width: 100px;
+	background: #F98527;
+
+	animation-name: flip;
+	animation-duration: 2.6s;
+	animation-iteration-count: infinite;
+
+}
+
+@keyframes flip {
+	0% {transform: perspective(300px)}
+	50% {transform: perspective(300px) rotateY(180deg)}
+	100% {transform: perspective(300px) rotateY(180deg) rotateX(180deg)}
+}
+
+/* Loader four: Spin */
+.loader.four .rings {
+	position: relative;
+	width: 100px;
+	height: 100px;
+}
+
+.loader.four .ring {
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	position: absolute;
+	top: 50%; left: 50%;
+	transform: translate(-50%, -50%);
+	overflow: hidden;
+}
+.loader.four .ring.two {
+	width: 80%;
+	height: 80%;
+}
+.loader.four .ring.three {
+	width: 60%;
+	height: 60%;
+}
+
+.loader.four .ring .mask {
+	width: 93%;
+	height: 93%;
+	border-radius: 50%;
+	position: absolute;
+	top: 50%; left: 50%;
+	transform: translate(-50%, -50%);
+	background: #E5F1F7;
+}
+
+.loader.four .ring .arc-container {
+	width: 80%;
+	height: 100%;
+	position: absolute;
+	left: 10%;
+	overflow: hidden;
+	transform-origin: 50% 50%;
+	border-radius: 10px;
+
+	animation-timing-function: linear;
+}
+
+.loader.four .ring.one .arc-container {
+	animation-name: spin;
+	animation-duration: 1s;
+	animation-iteration-count: infinite;
+}
+
+
+.loader.four .ring.two .arc-container {
+	animation-name: spin;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+	animation-delay: 0.2s;
+}
+
+.loader.four .ring.three .arc-container {
+	animation-name: spin;
+	animation-duration: 0.75s;
+	animation-iteration-count: infinite;
+	animation-delay: 0.1s;
+}
+
+.loader.four .ring .arc {
+	width: 100%;
+	height: 50%;
+	position: absolute;
+	background: #10D4C6;
+}
+
+.loader.four .ring.one .arc-container {
+	border-radius: 30px;
+	
+}
+
+.loader.four .ring.one .arc {
+	animation-name: spin-color;
+	animation-duration: 2.2s;
+	animation-iteration-count: infinite;
+}
+
+.loader.four .ring.two .arc {
+	animation-name: spin-color;
+	animation-duration: 3s;
+	animation-iteration-count: infinite;
+	animation-direction: reverse;
+}
+
+.loader.four .ring.one .arc {
+	animation-name: spin-color;
+	animation-duration: 3s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes spin {
+	from {transform: rotate(0deg)}
+	to {transform: rotate(360deg)}
+}
+
+@keyframes spin-color {
+	0% {background-color: #10D4C6;}
+	25% {background-color: #3068CD;}
+	50% {background-color: #7910D4;}
+	100% {background-color: #41EA97;}
+}
