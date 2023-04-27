@@ -1,6 +1,72 @@
 <!DOCTYPE html>
 <html>
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="assets/css/style.css">
+        <script src="assets/js/script.js"></script> 
+        <style>
+            body {
+                background-image: url(assets/img/bg.png);
+                background-repeat: no-repeat;
+            }
+
+            html {
+                scroll-behavior: smooth;
+            }
+        </style>
+
+        <script>
+        // Get the element with id="defaultOpen" and click on it
+        document.getElementById("defaultOpen").click();
+        </script>
+    </head>
+
+    <header>
+            <img src="assets/img/clouds.png" class="clouds">
+    </header>
+
     <body>
-        FINAL
+        <div class="intro">
+            <div class="title">
+                <h1>Exploring Cities</h1>
+                <h2>Let me introduce you to the cities I grew up in!</h2>
+                <a href="#tab-jump">
+                <button class="tablinks" onclick="openCity(event, 'Guangzhou')" id="defaultOpen">Let's Go</button>
+                </a>
+            </div>
+            <img src="assets/img/intro-graphics.png" id="intro-graphic">
+        </div>
+
+        <!-- Tab links -->
+
+        <a id="tab-jump">
+
+        <div class="tab">
+            <button class="tablinks" onclick="openCity(event, 'Guangzhou')">Guangzhou</button>
+            <button class="tablinks" onclick="openCity(event, 'San Francisco')">San Francisco</button>
+            <button class="tablinks" onclick="openCity(event, 'Berkeley')">Berkeley</button>
+        </div>
+        
+        <!-- Tab content -->
+        <div id="Guangzhou" class="tabcontent">
+            <div class="city">GUANGZHOU</div>
+            <img src="assets/img/guangzhou.png" id="guangzhou-img">
+
+        </div>
+        
+        <div id="San Francisco" class="tabcontent">
+            <div class="city">SAN FRANCISCO</div>
+            <img src="assets/img/sf.png" id="sf-img">
+        </div>
+        
+        <div id="Berkeley" class="tabcontent">
+            <div class="city">BERKELEY</div>
+            <img src="assets/img/berkeley.png" id="berkeley-img">
+        </div>
+
+        </a>
+
     </body>
+
+
 </html>
